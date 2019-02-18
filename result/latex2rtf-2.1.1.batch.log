@@ -1,0 +1,14 @@
+latex2rtf-2.1.1.c
+Running Sparrow
+Sparrow completes (611 sec)
+Running Souffle
+Souffle completes (1 sec)
+Building Bayesian Network
+Building Bayesian Network completes (12 sec)
+Running Bingo
+Bingo completes (2 sec)
+Total alarms    : 13
+True alarms     : 2
+False alarms    : 11
+Last true alarm : 6
+AUC: 0.7272727272727273

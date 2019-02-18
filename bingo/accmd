@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+export PROBLEM_DIR=$1    # The dir containing the bnet to be read.
+                         # example: pjbench/dacapo/benchmarks/luindex/petablox_output_mln-datarace-problem
+
+export BASE_FILE=$2      # filename (relative to chord-fork) containing the alarms to be ranked.
+export ORACLE_FILE=$3    # filename (relative to chord-fork) containing TrueGround tuples
+export DFILE=$4          # Supplementary feedback dictionary
+export MIN=$5            # min iters arg to AC command
+export PREFIX=$6         # prefix for output files/dirs to allow multiple instances of ranker on a machine.
+export OLD_LABEL_FILE=$7 # filename containing old labels
+export BNET=$8
+export PRINT_GRAPH=$9
+
+########################################################################################################################
+# NOTE: FIXME! The following example invocation is obsolete!
+# It does not illustrate the use of several options.
+# Example command:
+# ./accmd petablox-bench/jspider/petablox_output_mln-datarace-problem \
+#         noaugment_base \
+#         pjbench/jspider/petablox_output_mln-datarace-problem/base_queries.txt \
+#         petablox-bench/jspider/jspider_races_rr_tup_FFT_base.out \
+#         500 \
+#         js_500_
+########################################################################################################################
+
+MAX=$((MIN + 500))
+
+
+mkdir -p $PROBLEM_DIR/bingo_${PREFIX}combined
+
+BINGO_EXE=$NICHROME_HOME/main/libsrc/libdai/bingo
+
+./bingo/driver.py $PROBLEM_DIR/$BNET/bnet-dict.out \
+                  $PROBLEM_DIR/$BNET/factor-graph.fg \
+                  $BASE_FILE \
+                  $ORACLE_FILE \
+                  $BINGO_EXE \
+                  $PROBLEM_DIR/$BNET/named_cons_all.txt.cep \
+                  $OLD_LABEL_FILE \
+                  $PRINT_GRAPH \
+                  > $PROBLEM_DIR/$BNET/${PREFIX}driver.out 2> $PROBLEM_DIR/$BNET/${PREFIX}driver.log <<EOF
+AC $DFILE 1e-6 $MIN $MAX 100 $PROBLEM_DIR/bingo_${PREFIX}stats.txt $PROBLEM_DIR/bingo_${PREFIX}combined/ out
+EOF

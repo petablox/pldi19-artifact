@@ -1,0 +1,43 @@
+.type Node
+
+.decl DUEdge(n:Node, m:Node)
+.decl TrueCond(n:Node)
+.decl FalseCond(n:Node)
+.decl TrueBranch(n:Node, m:Node)
+.decl FalseBranch(n:Node, m:Node)
+.decl DUPath(n:Node, m:Node)
+.decl Alarm(n:Node, m:Node)
+.decl Deriv_DUPath0(n:Node, m:Node)
+.decl Deriv_DUPath1(n:Node, m:Node)
+.decl Deriv_DUPath2(n:Node, m:Node)
+.decl Deriv_DUPath3(n:Node, m:Node, k:Node)
+.decl Deriv_DUPath4(n:Node, m:Node, k:Node)
+.decl Deriv_DUPath5(n:Node, m:Node, k:Node)
+
+.input DUEdge
+.input TrueCond
+.input FalseCond
+.input TrueBranch
+.input FalseBranch
+.input Alarm
+.output DUPath
+.output Deriv_DUPath0
+.output Deriv_DUPath1
+.output Deriv_DUPath2
+.output Deriv_DUPath3
+.output Deriv_DUPath4
+.output Deriv_DUPath5
+
+DUPath(x,y) :- DUEdge(x,y).
+DUPath(x,y) :- TrueBranch(x,y).
+DUPath(x,y) :- FalseBranch(x,y).
+DUPath(x,y) :- DUPath(x,z), DUEdge(z,y), Alarm(x,_).
+DUPath(x,y) :- DUPath(x,z), TrueCond(z), TrueBranch(z,y).
+DUPath(x,y) :- DUPath(x,z), FalseCond(z), FalseBranch(z,y).
+
+Deriv_DUPath0(x,y) :- DUEdge(x,y).
+Deriv_DUPath1(x,y) :- TrueBranch(x,y).
+Deriv_DUPath2(x,y) :- FalseBranch(x,y).
+Deriv_DUPath3(x,z,y) :- DUPath(x,z), DUEdge(z,y), Alarm(x,_).
+Deriv_DUPath4(x,z,y) :- DUPath(x,z), TrueCond(z), TrueBranch(z,y).
+Deriv_DUPath5(x,z,y) :- DUPath(x,z), FalseCond(z), FalseBranch(z,y).

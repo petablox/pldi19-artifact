@@ -1,0 +1,14 @@
+tar-1.28.c
+Running Sparrow
+Sparrow completes (1146 sec)
+Running Souffle
+Souffle completes (1 sec)
+Building Bayesian Network
+Building Bayesian Network completes (9 sec)
+Running Bingo
+Bingo completes (729 sec)
+Total alarms    : 1369
+True alarms     : 1
+False alarms    : 1368
+Last true alarm : 219
+AUC: 0.8406432748538012

@@ -1,0 +1,7 @@
+Rank	Confidence	Ground	Label	Comments	Tuple
+1	0.989851	FalseGround	Unlabelled	SPOkGoodGood	Alarm(main-44626,fprintRTF-45955)
+2	0.959386	TrueGround	Unlabelled	SPOkGoodGood	Alarm(getRawTexChar-43146,fprintRTF-45955)
+3	0.94243	FalseGround	Unlabelled	SPOkGoodGood	Alarm(my_fgetc-44573,fprintRTF-45955)
+4	0.912143	FalseGround	Unlabelled	SPOkGoodGood	Alarm(getTmpPath-45997,fprintRTF-45955)
+5	0.89434	FalseGround	Unlabelled	SPOkGoodGood	Alarm(open_env-46145,fprintRTF-45955)
+6	0.816693	TrueGround	Unlabelled	SPOkGoodGood	Alarm(getRawTexChar-43139,fprintRTF-45955)

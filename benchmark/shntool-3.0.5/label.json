@@ -1,0 +1,68 @@
+[
+  {
+    "project": "shntool-3.0.5",
+    "source": {
+      "file": "core_shntool.c",
+      "line": 304
+    },
+    "sink": {
+      "file": "mode_cmp.c",
+      "line": 187
+    }
+  },
+  {
+    "project": "shntool-3.0.5",
+    "source": {
+      "file": "core_shntool.c",
+      "line": 304
+    },
+    "sink": {
+      "file": "mode_cmp.c",
+      "line": 318
+    }
+  },
+  {
+    "project": "shntool-3.0.5",
+    "source": {
+      "file": "core_fileio.c",
+      "line": 107
+    },
+    "sink": {
+      "file": "mode_cmp.c",
+      "line": 187
+    }
+  },
+  {
+    "project": "shntool-3.0.5",
+    "source": {
+      "file": "core_fileio.c",
+      "line": 107
+    },
+    "sink": {
+      "file": "mode_cmp.c",
+      "line": 318
+    }
+  },
+  {
+    "project": "shntool-3.0.5",
+    "source": {
+      "file": "core_fileio.c",
+      "line": 129
+    },
+    "sink": {
+      "file": "mode_cmp.c",
+      "line": 187
+    }
+  },
+  {
+    "project": "shntool-3.0.5",
+    "source": {
+      "file": "core_fileio.c",
+      "line": 129
+    },
+    "sink": {
+      "file": "mode_cmp.c",
+      "line": 318
+    }
+  }
+]

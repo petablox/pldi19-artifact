@@ -1,0 +1,8 @@
+sparrow
+nichrome
+sparrow-out
+bingo/prune-cons/prune-cons
+bingo/prune-cons/prune-cons-unopt
+bingo/prune-cons/keep-derivable
+rule-prob.txt
+__pycache__

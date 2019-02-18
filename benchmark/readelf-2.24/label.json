@@ -1,0 +1,11 @@
+[
+  {
+    "project": "readelf-2.24",
+    "file": "dwarf.c",
+    "line": 6414,
+    "CVE": "CVE-2018-10372",
+    "type": "buffer-overflow",
+    "report": "https://www.cvedetails.com/cve/CVE-2018-10372/?q=CVE-2018-10372",
+    "patch": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=blobdiff;f=binutils/dwarf.c;h=f94f5b2fe699941b2f31c803da422b4c9b071d39;hp=10b4e284ce3cafccd50499700bca84346af85e62;hb=6aea08d9f3e3d6475a65454da488a0c51f5dc97d;hpb=c48935d75f720ecb006c81b37f4058e751f1dc31"
+  }
+]

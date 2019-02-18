@@ -1,0 +1,14 @@
+urjtag-0.8.c
+Running Sparrow
+Sparrow completes (234 sec)
+Running Souffle
+Souffle completes (1 sec)
+Building Bayesian Network
+Building Bayesian Network completes (18 sec)
+Running Bingo
+Bingo completes (22 sec)
+Total alarms    : 35
+True alarms     : 6
+False alarms    : 29
+Last true alarm : 22
+AUC: 0.4482758620689655

@@ -1,0 +1,8 @@
+readelf-2.23.2.c
+Running Sparrow
+Sparrow completes (167 sec)
+Running Souffle
+Souffle completes (1 sec)
+Building Bayesian Network
+Building Bayesian Network completes (9 sec)
+Total alarms: 841

@@ -1,0 +1,4 @@
+Rank	Confidence	Ground	Label	Comments	Tuple
+1	0.985817	TrueGround	Unlabelled	SPOkGoodGood	Alarm(read_value_short-23246,cmp_files-13307)
+2	0.000109389	TrueGround	Unlabelled	SPOkGoodGood	Alarm(main-20258,cmp_files-13307)
+3	2.65357e-13	TrueGround	Unlabelled	SPOkGoodGood	Alarm(read_value_long-23230,cmp_files-13307)

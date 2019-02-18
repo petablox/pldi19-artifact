@@ -1,0 +1,14 @@
+Running Delta Bingo (syn)
+Step 1: Translating constraints
+674 syntactically common alarms detected
+41 syntactically new alarms detected
+Finished translating constraints (0 sec)
+Step 2: Executing Interaction
+Executing accmd
+Computing AUC
+Total alarms    : 41
+True alarms     : 1
+False alarms    : 40
+Last true alarm : 10
+AUC: 0.775
+Interaction completes (15 sec)

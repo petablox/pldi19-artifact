@@ -1,0 +1,14 @@
+shntool-3.0.5.c
+Running Sparrow
+Sparrow completes (60 sec)
+Running Souffle
+Souffle completes (0 sec)
+Building Bayesian Network
+Building Bayesian Network completes (4 sec)
+Running Bingo
+Bingo completes (25 sec)
+Total alarms    : 23
+True alarms     : 6
+False alarms    : 17
+Last true alarm : 14
+AUC: 0.8431372549019608

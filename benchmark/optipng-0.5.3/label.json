@@ -1,0 +1,13 @@
+[
+  {
+    "project": "optipng-0.5.3",
+    "source": {
+      "file": "tiffread.c",
+      "line": 192
+    },
+    "sink": {
+      "file": "tiffread.c",
+      "line": 353
+    }
+  }
+]

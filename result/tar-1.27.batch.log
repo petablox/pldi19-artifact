@@ -1,0 +1,8 @@
+tar-1.27.c
+Running Sparrow
+Sparrow completes (766 sec)
+Running Souffle
+Souffle completes (0 sec)
+Building Bayesian Network
+Building Bayesian Network completes (9 sec)
+Total alarms: 1229

@@ -1,0 +1,14 @@
+grep-2.19.c
+Running Sparrow
+Sparrow completes (25 sec)
+Running Souffle
+Souffle completes (0 sec)
+Building Bayesian Network
+Building Bayesian Network completes (4 sec)
+Running Bingo
+Bingo completes (75 sec)
+Total alarms    : 913
+True alarms     : 1
+False alarms    : 912
+Last true alarm : 53
+AUC: 0.9429824561403509

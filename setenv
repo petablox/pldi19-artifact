@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export NICHROME_HOME=$PWD/nichrome
+export PATH=$PWD/sparrow/bin:$PATH

@@ -1,0 +1,47 @@
+Running time of batch-mode analysis on old versions
+shntool-3.0.4            :    62 sec
+latex2rtf-2.1.0          :   557 sec
+urjtag-0.7               :   142 sec
+optipng-0.5.2            :    48 sec
+wget-1.11.4              :   230 sec
+readelf-2.23.2           :   177 sec
+grep-2.18                :    30 sec
+sed-4.2.2                :     8 sec
+sort-7.1                 :    50 sec
+tar-1.27                 :   775 sec
+
+Running time of batch-mode analysis on new versions + Bingo
+shntool-3.0.5            :    89 sec
+latex2rtf-2.1.1          :   626 sec
+urjtag-0.8               :   275 sec
+optipng-0.5.3            :    57 sec
+wget-1.12                :  3590 sec
+readelf-2.24             :   369 sec
+grep-2.19                :   104 sec
+sed-4.3                  :   157 sec
+sort-7.2                 :   279 sec
+tar-1.28                 :  1885 sec
+
+Running time of syntactic masking + Drake-Unsound
+shntool-3.0.5            :    16 sec
+latex2rtf-2.1.1          :   116 sec
+urjtag-0.8               :    68 sec
+optipng-0.5.3            :    34 sec
+wget-1.12                :   438 sec
+readelf-2.24             :   499 sec
+grep-2.19                :    71 sec
+sed-4.3                  :   108 sec
+sort-7.2                 :    67 sec
+tar-1.28                 :  1135 sec
+
+Running time of Drake-Sound
+shntool-3.0.5            :   193 sec
+latex2rtf-2.1.1          :   247 sec
+urjtag-0.8               :   336 sec
+optipng-0.5.3            :    75 sec
+wget-1.12                :  2348 sec
+readelf-2.24             :   499 sec
+grep-2.19                :   321 sec
+sed-4.3                  :   448 sec
+sort-7.2                 :   292 sec
+tar-1.28                 :  2383 sec

@@ -1,0 +1,14 @@
+optipng-0.5.3.c
+Running Sparrow
+Sparrow completes (49 sec)
+Running Souffle
+Souffle completes (1 sec)
+Building Bayesian Network
+Building Bayesian Network completes (3 sec)
+Running Bingo
+Bingo completes (4 sec)
+Total alarms    : 67
+True alarms     : 1
+False alarms    : 66
+Last true alarm : 14
+AUC: 0.803030303030303

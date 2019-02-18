@@ -1,0 +1,12 @@
+[
+  {
+    "project": "sort-7.2",
+    "file": "sort.c",
+    "line": 2611,
+    "type": "buffer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": "http://git.savannah.gnu.org/cgit/coreutils.git/commit/?id=14ad7a25505ec3127cd1f07001d54d94f51f1748",
+    "commit": "https://github.com/coreutils/coreutils/commit/8f7fae59727e0a050a4833705a6f7849ba2c4531"
+  }
+]

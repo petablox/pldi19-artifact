@@ -1,0 +1,14 @@
+sed-4.3.c
+Running Sparrow
+Sparrow completes (29 sec)
+Running Souffle
+Souffle completes (0 sec)
+Building Bayesian Network
+Building Bayesian Network completes (5 sec)
+Running Bingo
+Bingo completes (123 sec)
+Total alarms    : 818
+True alarms     : 1
+False alarms    : 817
+Last true alarm : 102
+AUC: 0.8763769889840881

@@ -1,0 +1,14 @@
+readelf-2.24.c
+Running Sparrow
+Sparrow completes (199 sec)
+Running Souffle
+Souffle completes (1 sec)
+Building Bayesian Network
+Building Bayesian Network completes (10 sec)
+Running Bingo
+Bingo completes (159 sec)
+Total alarms    : 882
+True alarms     : 1
+False alarms    : 881
+Last true alarm : 78
+AUC: 0.9125993189557321

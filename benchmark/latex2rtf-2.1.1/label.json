@@ -1,0 +1,24 @@
+[
+  {
+    "project": "latex2rtf-2.1.1",
+    "source": {
+      "file": "parser.c",
+      "line": 439
+    },
+    "sink": {
+      "file": "main.c",
+      "line": 834
+    }
+  },
+  {
+    "project": "latex2rtf-2.1.1",
+    "source": {
+      "file": "parser.c",
+      "line": 450
+    },
+    "sink": {
+      "file": "main.c",
+      "line": 834
+    }
+  }
+]

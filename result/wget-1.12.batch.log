@@ -1,0 +1,14 @@
+wget-1.12.c
+Running Sparrow
+Sparrow completes (3281 sec)
+Running Souffle
+Souffle completes (1 sec)
+Building Bayesian Network
+Building Bayesian Network completes (5 sec)
+Running Bingo
+Bingo completes (303 sec)
+Total alarms    : 793
+True alarms     : 6
+False alarms    : 787
+Last true alarm : 168
+AUC: 0.8204150783566285

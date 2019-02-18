@@ -1,0 +1,12 @@
+[
+  {
+    "project": "grep-2.19",
+    "file": "kwset.c",
+    "line": 657,
+    "type": "buffer-overflow",
+    "CVE": "CVE-2015-1345",
+    "report": "https://www.cvedetails.com/cve/CVE-2015-1345/?q=CVE-2015-1345",
+    "patch": "http://git.savannah.gnu.org/cgit/grep.git/commit/?id=83a95bd8c8561875b948cadd417c653dbe7ef2e2",
+    "commit": "http://git.savannah.gnu.org/cgit/grep.git/commit/?h=v2.19&id=73893ffbada36599fb6ec2eb489b6a7decf0c248"
+  }
+]

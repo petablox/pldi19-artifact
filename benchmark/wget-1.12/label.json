@@ -1,0 +1,20 @@
+[
+  {
+    "project": "wget-1.12",
+    "file": "ftp-ls.c",
+    "line": 766,
+    "patch": "https://github.com/mirror/wget/commit/b3ff8ce3d59a1a5991bd7f751f8348fdf168cb99"
+  },
+  {
+    "project": "wget-1.12",
+    "file": "ftp-ls.c",
+    "line": 789,
+    "patch": "https://github.com/mirror/wget/commit/f0d715b264689533fbfc494476855d9b6334230e"
+  },
+  {
+    "project": "wget-1.12",
+    "file": "ftp-ls.c",
+    "line": 796,
+    "patch": "https://github.com/mirror/wget/commit/f0d715b264689533fbfc494476855d9b6334230e"
+  }
+]

@@ -1,0 +1,32 @@
+Reusing old translation
+Running Delta Bingo (sem)
+Step 1: Translating constraints
+27 syntactically new alarms detected
+[15:50:32] INFO [root.<module>:14] Hello!
+[15:50:34] INFO [root.<module>:47] Read 205872 clauses
+[15:50:35] INFO [root.<module>:77] Bye!
+[15:50:35] INFO [root.<module>:14] Hello!
+[15:50:43] INFO [root.<module>:47] Read 651481 clauses
+[15:50:44] INFO [root.<module>:77] Bye!
+Finished translating constraints (14 sec)
+Step 2: Merging constraints
+[15:50:47] INFO [root.<module>:44] Hello!
+[15:50:55] INFO [root.<module>:74] Read 205872 old clauses and 651481 new clauses
+[15:50:56] INFO [root.<module>:76] 119278 clauses occur in common between the two sets
+[15:50:56] INFO [root.<module>:86] Read 15 old alarms and 35 new alarms: 8 alarms occur in common
+[15:50:56] INFO [root.<module>:98] Old clauses cover 115210 tuples: 34768 EDB and 80442 IDB tuples
+[15:50:57] INFO [root.<module>:105] New clauses cover 252379 tuples: 41982 EDB and 210397 IDB tuples
+[15:50:57] INFO [root.<module>:109] 81478 tuples occur in common: 24153 common EDBs
+[15:51:16] INFO [root.<module>:203] Printing all EDB tuples to benchmark/urjtag-0.8/sparrow-out/taint/merged_bnet_0.005/AllEDB.txt
+[15:51:18] INFO [root.<module>:248] Bye!
+SemAllAlarm.txt contains the same new tuples as SemAllAlarm.txt.ukd. Good-good!
+Finished merging constraints (86 sec)
+Step 3: Building Bayesian Network
+Finished building Bayeisan network (20 sec)
+Step 4: Executing Interaction
+Interaction completes (180 sec)
+Total alarms    : 35
+True alarms     : 6
+False alarms    : 29
+Last true alarm : 22
+AUC: 0.46551724137931033
