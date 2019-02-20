@@ -31,7 +31,7 @@ result/    # log files of the experimental results
 Directory `benchmark` contains subdirectories for two versions of programs. In each subdirectory,
 analysis results are stored in `sparrow-out`
 
-Note that some of the experiments are very time and memory consuming. We hightly recommand that the users run the experiments with at least 16GB memory.
+Note that some of the experiments are very time and memory consuming. We hightly recommand that the users run the experiments with at least 16GB of memory.
 We also provide our results on a Linux machine with Intel Xeon Gold 6154 3GHz cpu and 40GB of memory in `result/` for reference.
 The running time for each benchmark is reported in `result/runningtime.txt`.
 Users can also generate summary tables from the existing log files with the following command:
