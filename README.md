@@ -63,6 +63,16 @@ Log files `benchmark/shntool-3.0.5/sparrow-out/taint/bingo_delta_syn_strong_comb
 and `benchmark/shntool-3.0.5/sparrow-out/taint/bingo_delta_syn_strong_combined/0.out`
 show the rankings after initialization (Column "Initial") and feedback transfer (Column "Feedback"), respectively.
 
+The file N.out gives the ranking of alarms produced by our Bayesian inference system after N feedback.
+The columns have the following meaning:
+- Column 1: Rank of the alarm
+- Column 2: The confidence score
+- Column 3: The ground truth about the alarm: whether it is true or false.
+- Column 4: “Unlabelled” if the alarm has not been labelled by the user, “PosLabel”
+(“NegLabel”) if the user labels it true (false).
+- Column 5: Debug message
+- Column 6: The alarm itself
+
 ### Drake-Sound
 To reproduce the results from Drake-Sound with epsilon 0.001, run the following command:
 ```
