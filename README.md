@@ -41,6 +41,9 @@ $ script/table.sh
 Note that rankings by Bayesian inference (Columns Init, Feedback, and #Iters) may be slightly
 different from the paper because of the underlying nondeterminism of our implementation (e.g., Python's set library).
 
+We tested the Docker image on Linux and Mac with the latest version of Docker. Note that Docker for Mac is set to use 2GB of memory by default.
+The users should increase memory limit following the [instruction](https://docs.docker.com/docker-for-mac/).
+
 ## To Run Drake on a Single Benchmark
 Here is an example to run Drake on a single benchmark. Users can run Drake with different benchmarks and analyses in a similar way.
 An analysis is either `interval` (for buffer overrun) or `taint` (for integer overflow and format string).
