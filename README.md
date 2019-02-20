@@ -5,7 +5,7 @@ of the paper is available via
 [here](https://www.cis.upenn.edu/~kheo/paper/pldi19.pdf).
 
 ## Getting Started
-We provide the artifact as a Docker image via this [link]().
+We provide the artifact as a Docker image via this [link](https://drive.google.com/open?id=14Ma91b3PF-tcFsYlHOHl3w5EigyNsgNY).
 All binaries have already built in the image.
 
 ```
