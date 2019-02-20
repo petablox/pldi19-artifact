@@ -12,7 +12,7 @@ All binaries have already built in the image.
 $ docker load --input drake-artifact.tar
 $ docker run -it --name drake drake
 ```
-The artifact is in the `pldi19-artifact/`. Users should begin by setting up environment variables with the following command:
+The artifact is in the `pldi19-artifact/` directory. Users should begin by setting up environment variables with the following command:
 ```
 $ cd pldi19-artifact
 $ . setenv
