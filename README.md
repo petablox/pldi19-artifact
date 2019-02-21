@@ -40,7 +40,10 @@ $ script/table.sh
 Note that rankings by Bayesian inference (Columns Init, Feedback, and #Iters) may be slightly
 different from the paper because of the underlying nondeterminism of our implementation (e.g., Python's set library).
 
-We tested the Docker image on Linux and Mac with the latest version of Docker. Note that Docker for Mac is set to use 2GB of memory by default.
+We tested the Docker image on Linux (Ubuntu) and Mac with the latest version of Docker.
+Docker on other distributions of Linux (e.g., Fedora) may have permission issues with SELinux.
+Please consult your documentation to disable SELinux.
+Note that Docker for Mac is set to use 2GB of memory by default.
 The users should increase memory limit following the [instruction](https://docs.docker.com/docker-for-mac/).
 
 ## To Run Drake on a Single Benchmark
