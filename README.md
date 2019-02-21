@@ -5,9 +5,8 @@ of the paper is available
 [here](https://www.cis.upenn.edu/~kheo/paper/pldi19.pdf).
 
 ## Getting Started
-We provide the artifact as a Docker image via this [link](https://drive.google.com/open?id=14Ma91b3PF-tcFsYlHOHl3w5EigyNsgNY).
-All binaries have already built in the image.
-
+We provide the artifact as a [Docker](https://www.docker.com) image via this [link](https://drive.google.com/open?id=14Ma91b3PF-tcFsYlHOHl3w5EigyNsgNY).
+All binaries have already built in the image. After downloading the image file, You can load and start the image with the following command:
 ```
 $ docker load --input drake-artifact.tar
 $ docker run -it --name drake drake
