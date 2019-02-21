@@ -19,7 +19,7 @@ $ . setenv
 
 The artifact is organized as follows:
 ```
-benchmark/ # benchmark source code and meta information (syntactic maching information and bug locations)
+benchmark/ # benchmark source code and meta information (syntactic matching information and bug locations)
 bingo/     # bayesian inference engine
 datalog/   # datalog programs to extract derivation graphs
 delta/     # shell scripts to run continuous reasoning
@@ -30,7 +30,7 @@ result/    # log files of the experimental results
 Directory `benchmark` contains subdirectories for two versions of programs. In each subdirectory,
 analysis results are stored in `sparrow-out`
 
-Note that some of the experiments are very time and memory consuming. We hightly recommand that the users run the experiments with at least 16GB of memory.
+Note that some of the experiments are very time and memory consuming. We highly recommend that the users run the experiments with at least 16GB of memory.
 We also provide our results on a Linux machine with Intel Xeon Gold 6154 3GHz cpu and 40GB of memory in `result/` for reference.
 The running time for each benchmark is reported in `result/runningtime.txt`.
 Users can also generate summary tables from the existing log files with the following command:
@@ -46,7 +46,7 @@ The users should increase memory limit following the [instruction](https://docs.
 ## To Run Drake on a Single Benchmark
 Here is an example to run Drake on a single benchmark. Users can run Drake with different benchmarks and analyses in a similar way.
 An analysis is either `interval` (for buffer overrun) or `taint` (for integer overflow and format string).
-The characteristics of programs is described in Table 1.
+The characteristics of programs are described in Table 1.
 
 ### Batch-mode analysis and Bingo
 The following commands run Sparrow's taint analysis on two versions of `shntool`.
@@ -95,7 +95,7 @@ $ ./run_all.sh
 The results will be stored in `result/<program>.batch.log`.
 
 ### Running unsound continuous program reasoning (Columns "SynMask" and "Drake-Unsound" of Table 2)
-The following command will run continous-mode program analysis on two versions of the benchmarks.
+The following command will run continuous-mode program analysis on two versions of the benchmarks.
 ```
 $ ./delta_all.sh unsound
 ```
