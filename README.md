@@ -51,7 +51,7 @@ Here is an example to run Drake on a single benchmark. Users can run Drake with 
 An analysis is either `interval` (for buffer overrun) or `taint` (for integer overflow and format string).
 The characteristics of programs are described in Table 1.
 
-Below, we describe the step-by-step instructions to reproduce the experimental result. Note that Step 1 is mandatory to run Step 2 or 3.
+Below, we describe the step-by-step instructions to reproduce the experimental result. Note that Step 1 is mandatory to run Step 2 or 3. The order between Step 2 and 3 does not matter.
 
 ### Step 1: Batch-mode analysis and Bingo
 The following commands run Sparrow's taint analysis on two versions of `shntool`.
@@ -93,7 +93,7 @@ Users can change the parapeter as needed. In the paper, it is either 0.001, 0.00
 
 ## To Reproduce All the Paper Results
 Here are the instructions to reproduce the results of all the benchmarks at once. 
-Step 1 is mandatory to run Step 2 and 3.
+Step 1 is mandatory to run Step 2 or 3. The order between Step 2 and 3 does not matter.
 Step 3 should be preceded by Step 4.
 
 ### Step 1: Running batch-mode program analysis and Bingo (Columns "Batch" and "Bingo" of Table 2)
