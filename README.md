@@ -51,7 +51,9 @@ Here is an example to run Drake on a single benchmark. Users can run Drake with 
 An analysis is either `interval` (for buffer overrun) or `taint` (for integer overflow and format string).
 The characteristics of programs are described in Table 1.
 
-### Batch-mode analysis and Bingo
+Below, we describe the step-by-step instructions to reproduce the experimental result. Note that Step 1 is mandatory to run Step 2 or 3.
+
+### Step 1: Batch-mode analysis and Bingo
 The following commands run Sparrow's taint analysis on two versions of `shntool`.
 ```
 # run Sparrow on the old version
@@ -59,7 +61,7 @@ $ ./run.sh benchmark/shntool-3.0.4/shntool-3.0.4.c taint
 # run Sparrow on the new version and apply Bingo
 $ ./run.sh benchmark/shntool-3.0.5/shntool-3.0.5.c taint
 ```
-### Syntactic masking and Drake-Unsound
+### Step 2: Syntactic masking and Drake-Unsound
 Once you get the results from the first step, run the following command:
 ```
 $ ./delta.sh benchmark/shntool-3.0.4 benchmark/shntool-3.0.5 taint unsound
@@ -78,7 +80,7 @@ The columns have the following meaning:
 - Column 5: Debug message
 - Column 6: The alarm itself
 
-### Drake-Sound
+### Step 3: Drake-Sound
 To reproduce the results from Drake-Sound with epsilon 0.001, run the following command:
 ```
 $ ./delta.sh benchmark/shntool-3.0.4 benchmark/shntool-3.0.5 taint sound 0.001
@@ -87,9 +89,14 @@ Log files `benchmark/shntool-3.0.5/sparrow-out/taint/bingo_delta_sem-eps_strong_
 and `benchmark/shntool-3.0.5/sparrow-out/taint/bingo_delta_sem-eps_strong_0.001_combined/0.out`
 show the rankings after initialization (Column "Initial") and feedback transfer (Column "Feedback").
 
-## To Reproduce All the Paper Results
+Users can change the parapeter as needed. In the paper, it is either 0.001, 0.005, or 0.01.
 
-### Running batch-mode program analysis and Bingo (Columns "Batch" and "Bingo" of Table 2)
+## To Reproduce All the Paper Results
+Here are the instructions to reproduce the results of all the benchmarks at once. 
+Step 1 is mandatory to run Step 2 and 3.
+Step 3 should be preceded by Step 4.
+
+### Step 1: Running batch-mode program analysis and Bingo (Columns "Batch" and "Bingo" of Table 2)
 The following command will run batch-mode program analysis on two versions of the benchmarks
 and run Bingo on the new versions.
 ```
@@ -97,7 +104,7 @@ $ ./run_all.sh
 ```
 The results will be stored in `result/<program>.batch.log`.
 
-### Running unsound continuous program reasoning (Columns "SynMask" and "Drake-Unsound" of Table 2)
+### Step 2: Running unsound continuous program reasoning (Columns "SynMask" and "Drake-Unsound" of Table 2)
 The following command will run continuous-mode program analysis on two versions of the benchmarks.
 ```
 $ ./delta_all.sh unsound
@@ -112,7 +119,7 @@ the rankings after initialization (Column "Initial") and feedback transfer (Colu
 is either `interval` or `taint` depending on the benchmark (Section 5.1 in the paper).
 We report the last rankings of true alarms in the table.
 
-### Running sound continuous program reasoning (Columns "Drake-Sound" of Table 2)
+### Step 3: Running sound continuous program reasoning (Columns "Drake-Sound" of Table 2)
 ```
 $ ./delta_all.sh sound 0.001
 ```
@@ -125,13 +132,13 @@ Log files
 `benchmark/<new-version-program>/sparrow-out/<analysis>/bingo_delta_sem-eps_strong_0.001_combined/0.out` show
 the rankings after initialization (Column "Initial") and feedback transfer (Column "Feedback").
 
-### Running sound continuous program reasoning with different parameters (i.e., epsilon) (Figure 7)
+Users can change the parameter (`eps`) as needed:
 ```
-$ ./delta_all.sh sound [0.001 | 0.005 | 0.01]
+$ ./delta_all.sh sound <eps>
 ```
 `<eps>` is one of 0.001, 0.005, and 0.01 in our experiments.
 
-### Comparing sizes of Bayesian networks (Table 3)
+### Step 4: Comparing sizes of Bayesian networks (Table 3)
 ```
 $ script/bnetsize.sh
 ```
