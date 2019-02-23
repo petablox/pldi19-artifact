@@ -8,7 +8,7 @@ of the paper is available
 We provide the artifact as a [Docker](https://www.docker.com) image via this [link](https://drive.google.com/open?id=14Ma91b3PF-tcFsYlHOHl3w5EigyNsgNY).
 All binaries have already built in the image. After downloading the image file, You can load and start the image with the following command:
 ```
-$ docker load --input drake-artifact.tar
+$ docker load --input paper339.tar
 $ docker run -it --name drake drake
 ```
 The artifact is in the `pldi19-artifact/` directory. Users should begin by setting up environment variables with the following command:
