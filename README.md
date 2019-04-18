@@ -1,6 +1,6 @@
 # Drake PLDI'19 Artifact
-This directory contains the artifact of the paper "Continuous Program Reasoning
-via Differential Bayesian Inference" published in PLDI 2019. The latest version
+This directory contains the artifact of the paper "Continuously Reasoning about Programs using
+Differential Bayesian Inference" published in PLDI 2019. The latest version
 of the paper is available 
 [here](https://www.cis.upenn.edu/~kheo/paper/pldi19.pdf).
 
